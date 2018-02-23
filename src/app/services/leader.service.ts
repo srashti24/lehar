@@ -5,7 +5,10 @@ import { LEADERS } from '../shared/leaders';
 export class LeaderService {
 
   constructor() { }
-getPromtions(): Leader[] {
+getLeaders(): Leader[] {
     return LEADERS;
+}
+getFeauteredLeader():Leader{
+  return LEADERS.filter((leader)=>(leader.featured))[0];
 }
 }
