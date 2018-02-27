@@ -2,8 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import{MatListModule,MatGridListModule,MatGridTile,MatCardActions,MatCardModule,
   MatCardAvatar,MatCardHeader,MatCardTitle,MatToolbarModule,MatButtonModule,MatDialogModule,
-MatInputModule,MatCheckboxModule}
+MatInputModule,MatCheckboxModule, MatFormFieldModule}
 from '@angular/material';
+import {MatIconModule} from '@angular/material/icon';
+
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
@@ -42,7 +44,7 @@ import { LoginComponent } from './login/login.component';
     BrowserModule,MatListModule,FlexLayoutModule,
     MatGridListModule,MatCardModule,MatToolbarModule,MatButtonModule,
      AppRoutingModule,MatDialogModule,BrowserAnimationsModule,MatInputModule,
-     MatCheckboxModule,FormsModule
+     MatCheckboxModule,FormsModule,MatFormFieldModule,MatIconModule,MatFormFieldModule
   ],
   providers: [DishService,PromotionService,LeaderService],
   entryComponents:[LoginComponent],//not directly used in our application but triggerd at other part not a part of router nor explictily called

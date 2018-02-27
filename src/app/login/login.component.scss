@@ -1,4 +1,48 @@
 .lbColor
 {
-    background-color:rgb(224, 196, 217);
+    background-color:rgb(209, 74, 175);
 }
+
+.colrTool
+{
+    background-color:blueviolet;
+}
+
+
+.example-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .example-container > * {
+    width: 100%;
+  }
+  
+  .example-right-align {
+    text-align: right;
+  }
+  
+  input.example-right-align::-webkit-outer-spin-button,
+  input.example-right-align::-webkit-inner-spin-button {
+    display: none;
+  }
+  
+  input.example-right-align {
+    -moz-appearance: textfield;
+  }
+
+  .example-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .example-container > * {
+    width: 100%;
+  }
+
+  .alert alert-danger
+  {
+
+    border-block-end-color: red;
+
+  }
