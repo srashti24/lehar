@@ -36,7 +36,42 @@
        </div>
     </div>
     </div>
- 
-  </form> 
 
+
+
+
+
+
+    
+   
+
+    <div class="form-group">
+        <label for="name">Password</label>
+        <input type="password" class="form-control" id="password"
+        required
+        [(ngModel)]="user.password" name="password"
+        #password="ngModel">
+        <div [hidden]="password.valid || password.pristine"
+           class="alert alert-danger">
+           Password is required
+        </div>
+     </div>
+     <div class="form-group">
+        <label for="name">Confirm Password</label>
+        <input type="password" class="form-control" id="confirmPassword"
+        required
+        validateEqual="password"
+        [(ngModel)]="user.confirmPassword" name="confirmPassword"
+        #confirmPassword="ngModel">
+        <div [hidden]="confirmPassword.valid || confirmPassword.pristine"
+           class="alert alert-danger">
+           Passwords did not match
+        </div>
+     </div> 
+     <mat-dialog-actions>
+        <span class="flex-spacer"></span>
+        <button mat-button mat-dialog-close>Cancel</button>
+        <button type="submit" mat-button class="background-primary text-floral-white" >Login</button>
+      </mat-dialog-actions>
+  </form> 
 

@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import{MatListModule,MatGridListModule,MatGridTile,MatCardActions,MatCardModule,
   MatCardAvatar,MatCardHeader,MatCardTitle,MatToolbarModule,MatButtonModule,MatDialogModule,
-MatInputModule,MatCheckboxModule, MatFormFieldModule}
+MatInputModule,MatCheckboxModule, MatFormFieldModule,MatSlideToggleModule,MatOptionModule,MatSelectModule}
 from '@angular/material';
 import {MatIconModule} from '@angular/material/icon';
 
@@ -17,6 +17,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms'; 
+import { ReactiveFormsModule } from '@angular/forms'; 
 
 // import 'hammerjs';
 
@@ -44,7 +45,8 @@ import { LoginComponent } from './login/login.component';
     BrowserModule,MatListModule,FlexLayoutModule,
     MatGridListModule,MatCardModule,MatToolbarModule,MatButtonModule,
      AppRoutingModule,MatDialogModule,BrowserAnimationsModule,MatInputModule,
-     MatCheckboxModule,FormsModule,MatFormFieldModule,MatIconModule,MatFormFieldModule
+     MatCheckboxModule,FormsModule,MatFormFieldModule,MatIconModule,MatFormFieldModule,ReactiveFormsModule,
+     MatSlideToggleModule,MatOptionModule,MatSelectModule
   ],
   providers: [DishService,PromotionService,LeaderService],
   entryComponents:[LoginComponent],//not directly used in our application but triggerd at other part not a part of router nor explictily called

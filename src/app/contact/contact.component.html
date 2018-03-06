@@ -35,4 +35,110 @@
           </div>
         </div>
       </div>
-       </div>
+
+
+
+      
+      
+
+<!-- <div *ngIf="!name; else forminfo">
+    <form [formGroup]="rForm" (ngSubmit)="addPost(rForm.value)">
+      <div class="form-container">
+        <div class="row columns">
+          <h1>My Reactive Form</h1>
+          <label>Name
+            <input type="text" formControlName="name">
+          </label>
+  
+          <label>Description
+            <textarea  formControlName="description"></textarea>
+          </label>
+  
+          <label for="validate">Minimum of 3 Characters</label>
+          <input type="checkbox" name="validate" formControlName="validate" value="1"> On
+          
+          <input type="submit" class="button expanded" value="Submit Form" [disabled]="!rForm.valid">
+        </div>
+      </div>
+    </form>
+  </div>
+  
+  <ng-template #forminfo>
+    <div class="form-container">
+      <div class="row columns">
+          <h1>{{ name }}</h1>
+  
+          <p>{{ description }}</p>
+      </div>
+    </div>
+  </ng-template> -->
+
+  
+
+  <!-- <div fxFlex fxFlexOffset="20px" class="form-size">
+      <h3>Send us your Feedback</h3>
+      <p>{{ feedbackForm.value | json }} {{ feedbackForm.status | json }}</p>
+
+
+      
+      <form class="design" novalidate [formGroup]="feedbackForm" (ngSubmit)="onSubmit()">
+        <p>
+          <mat-input-container class="half-width">
+              <label>FirstName</label>
+            <input matInput formControlName="firstname"  type="text" required>
+          </mat-input-container>
+          <mat-input-container class="half-width">
+              <label>LastName</label>
+              
+            <input matInput formControlName="lastname" type="text" required>
+          </mat-input-container>
+        </p>
+        <p>
+          <mat-input-container class="half-width">
+              <label>Phone Number</label>
+            <input matInput formControlName="telnum" type="tel" required>
+          </mat-input-container>
+          <mat-input-container class="half-width">
+              <label>Email</label>
+            <input matInput formControlName="email"  type="email" required>
+          </mat-input-container>
+        </p>
+        <table class="form-size">
+          <td>
+          <mat-slide-toggle formControlName="agree">May we contact you?</mat-slide-toggle>
+          </td>
+          <td>
+          <mat-select  formControlName="contacttype">
+            <label>How?</label>
+            <mat-option *ngFor="let ctype of contactType" [value]="ctype">
+              {{ ctype }}
+            </mat-option>
+          </mat-select>
+          </td>
+          </table>
+        <p>
+          <mat-input-container class="full-width">
+            <label> your feedback</label>
+            <textarea matInput formControlName="message"  rows=12></textarea>
+          </mat-input-container>
+        </p>
+        <button type="submit" mat-button class="background-primary text-floral-white">Submit</button>
+      </form>
+    </div> -->
+
+
+    <form>
+        <h1>Feedback form</h1>
+        <input placeholder="First Name" type="text"  value="" required>
+        <input placeholder="last Name" type="text"  value="" required>
+        <input placeholder="Email address" type="email"  value="" required>
+        
+     
+        <div class="flex">
+          <textarea placeholder="Your Feedback" rows="1" required></textarea>
+        </div>
+        <button>Send</button>
+      </form>
+      
+     
+      
